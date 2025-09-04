@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "TaskLinkr",
+    "subtitle": "Built with Zara",
+    "description": "TaskLinkr is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://4d281c6fc7fb42b9bd70906f696467d2-hjdq-5rx8bia5e-vistara.vercel.app",
+    "splashImageUrl": "https://4d281c6fc7fb42b9bd70906f696467d2-hjdq-5rx8bia5e-vistara.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://4d281c6fc7fb42b9bd70906f696467d2-hjdq-5rx8bia5e-vistara.vercel.app/image.png",
+    "tagline": "TaskLinkr",
+    "screenshotUrls": [
+      "https://4d281c6fc7fb42b9bd70906f696467d2-hjdq-5rx8bia5e-vistara.vercel.app/screenshot.png",
+      "https://4d281c6fc7fb42b9bd70906f696467d2-hjdq-5rx8bia5e-vistara.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://4d281c6fc7fb42b9bd70906f696467d2-hjdq-5rx8bia5e-vistara.vercel.app/api/webhook"
+  }
+}
