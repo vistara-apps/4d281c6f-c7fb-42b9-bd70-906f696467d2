@@ -31,11 +31,9 @@ export function TaskCard({
         <div className="flex-shrink-0">
           <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center">
             {task.posterAvatar ? (
-              <Image
+              <img
                 src={task.posterAvatar}
                 alt={task.posterName}
-                width={40}
-                height={40}
                 className="w-full h-full rounded-full object-cover"
               />
             ) : (
