@@ -2,8 +2,9 @@
 
 import { OnchainKitProvider } from '@coinbase/onchainkit';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { WagmiProvider, createConfig, http } from 'wagmi';
+import { WagmiProvider, createConfig } from 'wagmi';
 import { base } from 'viem/chains';
+import { http } from 'viem';
 import { type ReactNode, useState } from 'react';
 
 const config = createConfig({
