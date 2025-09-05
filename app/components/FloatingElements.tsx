@@ -9,7 +9,7 @@ const floatingElements = [
   { icon: Star, delay: 2, x: '70%', y: '60%' },
   { icon: Zap, delay: 0.5, x: '15%', y: '70%' },
   { icon: Globe, delay: 1.5, x: '85%', y: '80%' },
-  { icon: Heart, delay: 2.5, x: '5%', y: '40%' }
+  { icon: Heart, delay: 2.5, x: '5%', y: '40%' },
 ];
 
 export function FloatingElements() {
@@ -25,13 +25,13 @@ export function FloatingElements() {
             animate={{
               y: [0, -20, 0],
               rotate: [0, 5, -5, 0],
-              scale: [1, 1.1, 1]
+              scale: [1, 1.1, 1],
             }}
             transition={{
               duration: 4,
               delay: element.delay,
               repeat: Infinity,
-              ease: 'easeInOut'
+              ease: 'easeInOut',
             }}
           >
             <Icon className="w-8 h-8 text-white/30" />

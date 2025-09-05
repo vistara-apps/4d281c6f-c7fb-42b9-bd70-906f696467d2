@@ -15,7 +15,7 @@ export function Header({ title, subtitle }: HeaderProps) {
       <div className="max-w-sm mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex-1">
-            <motion.h1 
+            <motion.h1
               className="text-xl font-bold text-white gradient-text"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -24,7 +24,7 @@ export function Header({ title, subtitle }: HeaderProps) {
               {title}
             </motion.h1>
             {subtitle && (
-              <motion.p 
+              <motion.p
                 className="text-sm text-white/60 mt-1"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -34,9 +34,9 @@ export function Header({ title, subtitle }: HeaderProps) {
               </motion.p>
             )}
           </div>
-          
+
           <div className="flex items-center gap-3">
-            <ConnectWallet 
+            <ConnectWallet
               text="Connect"
               className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
             />
