@@ -39,9 +39,11 @@ export function UserAvatar({
       className={`${sizeClasses[size]} rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center flex-shrink-0 ${className}`}
     >
       {src ? (
-        <img
+        <Image
           src={src}
           alt={alt || 'User avatar'}
+          width={sizePx[size]}
+          height={sizePx[size]}
           className="w-full h-full rounded-full object-cover"
         />
       ) : (
