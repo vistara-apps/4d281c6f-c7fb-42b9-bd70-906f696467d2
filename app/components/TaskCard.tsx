@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { MapPin, Clock, DollarSign, User, Calendar } from 'lucide-react';
+import Image from 'next/image';
 import { Task } from '../types';
 
 interface TaskCardProps {
@@ -10,7 +11,11 @@ interface TaskCardProps {
   onClick?: () => void;
 }
 
-export function TaskCard({ task, variant = 'compact', onClick }: TaskCardProps) {
+export function TaskCard({
+  task,
+  variant = 'compact',
+  onClick,
+}: TaskCardProps) {
   const isDetailed = variant === 'detailed';
 
   return (
@@ -26,9 +31,11 @@ export function TaskCard({ task, variant = 'compact', onClick }: TaskCardProps) 
         <div className="flex-shrink-0">
           <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center">
             {task.posterAvatar ? (
-              <img 
-                src={task.posterAvatar} 
+              <Image
+                src={task.posterAvatar}
                 alt={task.posterName}
+                width={40}
+                height={40}
                 className="w-full h-full rounded-full object-cover"
               />
             ) : (
@@ -88,7 +95,9 @@ export function TaskCard({ task, variant = 'compact', onClick }: TaskCardProps) 
                 </span>
               ))}
               {task.skills.length > 3 && (
-                <span className="text-white/50 text-xs px-1">+{task.skills.length - 3}</span>
+                <span className="text-white/50 text-xs px-1">
+                  +{task.skills.length - 3}
+                </span>
               )}
             </div>
           )}

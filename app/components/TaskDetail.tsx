@@ -1,7 +1,15 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowLeft, MapPin, Clock, DollarSign, User, Calendar, Users } from 'lucide-react';
+import {
+  ArrowLeft,
+  MapPin,
+  Clock,
+  DollarSign,
+  User,
+  Calendar,
+  Users,
+} from 'lucide-react';
 import { Task } from '../types';
 import { UserAvatar } from './UserAvatar';
 import { FCardButton } from './FCardButton';
@@ -42,13 +50,15 @@ export function TaskDetail({ task, onBack, onApply }: TaskDetailProps) {
           {/* Task Header */}
           <div className="glass-card rounded-lg p-4">
             <div className="flex items-start gap-3 mb-4">
-              <UserAvatar 
+              <UserAvatar
                 src={task.posterAvatar}
                 alt={task.posterName}
                 size="large"
               />
               <div className="flex-1">
-                <h2 className="text-xl font-bold text-white mb-1">{task.title}</h2>
+                <h2 className="text-xl font-bold text-white mb-1">
+                  {task.title}
+                </h2>
                 <div className="flex items-center gap-2 text-white/70 text-sm">
                   <User className="w-4 h-4" />
                   <span>{task.posterName}</span>
@@ -74,12 +84,16 @@ export function TaskDetail({ task, onBack, onApply }: TaskDetailProps) {
               </div>
               <div className="flex items-center gap-2 text-white/70">
                 <Clock className="w-4 h-4" />
-                <span>Posted {new Date(task.createdAt).toLocaleDateString()}</span>
+                <span>
+                  Posted {new Date(task.createdAt).toLocaleDateString()}
+                </span>
               </div>
               {task.deadline && (
                 <div className="flex items-center gap-2 text-orange-400 col-span-2">
                   <Calendar className="w-4 h-4" />
-                  <span>Due: {new Date(task.deadline).toLocaleDateString()}</span>
+                  <span>
+                    Due: {new Date(task.deadline).toLocaleDateString()}
+                  </span>
                 </div>
               )}
             </div>

@@ -13,7 +13,7 @@ const navItems = [
   { id: 'search', icon: Search, label: 'Search' },
   { id: 'post', icon: Plus, label: 'Post' },
   { id: 'notifications', icon: Bell, label: 'Notifications' },
-  { id: 'profile', icon: User, label: 'Profile' }
+  { id: 'profile', icon: User, label: 'Profile' },
 ];
 
 export function Navigation({ activeTab, onTabChange }: NavigationProps) {
@@ -22,10 +22,10 @@ export function Navigation({ activeTab, onTabChange }: NavigationProps) {
       <div className="max-w-sm mx-auto">
         <div className="glass-card rounded-t-2xl p-2 border-t border-white/20">
           <div className="flex items-center justify-around">
-            {navItems.map((item) => {
+            {navItems.map(item => {
               const Icon = item.icon;
               const isActive = activeTab === item.id;
-              
+
               return (
                 <motion.button
                   key={item.id}
@@ -33,9 +33,10 @@ export function Navigation({ activeTab, onTabChange }: NavigationProps) {
                   onClick={() => onTabChange(item.id)}
                   className={`
                     flex flex-col items-center gap-1 p-2 rounded-lg transition-all duration-200
-                    ${isActive 
-                      ? 'bg-purple-500/20 text-purple-300' 
-                      : 'text-white/60 hover:text-white/80'
+                    ${
+                      isActive
+                        ? 'bg-purple-500/20 text-purple-300'
+                        : 'text-white/60 hover:text-white/80'
                     }
                   `}
                 >

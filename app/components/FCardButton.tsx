@@ -12,24 +12,26 @@ interface FCardButtonProps {
   className?: string;
 }
 
-export function FCardButton({ 
-  children, 
-  variant = 'primary', 
+export function FCardButton({
+  children,
+  variant = 'primary',
   size = 'medium',
   onClick,
   disabled = false,
-  className = ''
+  className = '',
 }: FCardButtonProps) {
   const variantClasses = {
     primary: 'bg-purple-600 hover:bg-purple-700 text-white',
-    secondary: 'bg-white/10 hover:bg-white/20 text-white border border-white/20',
-    accent: 'bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white'
+    secondary:
+      'bg-white/10 hover:bg-white/20 text-white border border-white/20',
+    accent:
+      'bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white',
   };
 
   const sizeClasses = {
     small: 'px-3 py-1.5 text-xs',
     medium: 'px-4 py-2 text-sm',
-    large: 'px-6 py-3 text-base'
+    large: 'px-6 py-3 text-base',
   };
 
   return (
