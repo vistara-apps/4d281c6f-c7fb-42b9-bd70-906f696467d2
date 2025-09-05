@@ -3,6 +3,7 @@ import { Providers } from './providers';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tasklinkr.vercel.app'),
   title: 'TaskLinkr - Connect Locally, Earn Globally',
   description: 'A community-driven platform on Base for finding and completing local tasks',
   openGraph: {
