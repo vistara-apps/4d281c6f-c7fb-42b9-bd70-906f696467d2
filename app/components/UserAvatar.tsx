@@ -26,7 +26,6 @@ export function UserAvatar({
     small: 'w-3 h-3',
     medium: 'w-5 h-5',
     large: 'w-8 h-8',
-<<<<<<< HEAD
   };
 
   const sizePx = {
