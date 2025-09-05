@@ -93,7 +93,14 @@ This app is designed to work as a Base Mini App within the Farcaster ecosystem:
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run start` - Start production server
-- `npm run lint` - Run ESLint (requires configuration)
+- `npm run lint` - Run ESLint with auto-fix
+- `npm run lint:check` - Run ESLint without auto-fix
+
+### Build Notes
+
+- ✅ Build passes successfully with `npm run build`
+- ⚠️ You may see a deprecation warning about `@farcaster/frame-sdk` - this is from OnchainKit's dependencies and doesn't affect functionality
+- 🚀 Ready for production deployment
 
 ### Project Structure
 
